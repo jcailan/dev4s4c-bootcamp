@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZOSOID_F04</OBJECT>
+    <DOMLEN>Z_OLSP_ORD_ID_DOMA</DOMLEN>
+    <PERCENTAGE>10.0</PERCENTAGE>
+    <NONRSWAP>X</NONRSWAP>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+   </ATTRIBUTES>
+   <TEXT>
+    <OBJECT>ZOSOID_F04</OBJECT>
+    <TXT>Online Shop Order ID</TXT>
+    <TXTSHORT>Online Shop Order ID</TXTSHORT>
+   </TEXT>
+   <ISOLANG>EN</ISOLANG>
+  </asx:values>
+ </asx:abap>
+</abapGit>
