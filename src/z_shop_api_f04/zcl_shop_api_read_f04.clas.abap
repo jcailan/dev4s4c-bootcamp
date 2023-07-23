@@ -35,13 +35,19 @@ CLASS zcl_shop_api_read_f04 IMPLEMENTATION.
         lo_http_client = cl_web_http_client_manager=>create_by_http_destination( lo_destination ).
         ASSERT lo_http_client IS BOUND.
         " If you like to use IF_HTTP_CLIENT you must use the following factory: /IWBEP/CL_CP_CLIENT_PROXY_FACT
-        lo_client_proxy = /iwbep/cl_cp_factory_remote=>create_v2_remote_proxy(
-          EXPORTING
-             is_proxy_model_key       = VALUE #( repository_id       = 'SRVD'
-                                                 proxy_model_id      = 'Z_SHOP_API_SCM_F04'
-                                                 proxy_model_version = '0001' )
-            io_http_client             = lo_http_client
-            iv_relative_service_root   = '' ).
+*        lo_client_proxy = /iwbep/cl_cp_factory_remote=>create_v2_remote_proxy(
+*          EXPORTING
+*             is_proxy_model_key       = VALUE #( repository_id       = 'SRVD'
+*                                                 proxy_model_id      = 'Z_SHOP_API_SCM_F04'
+*                                                 proxy_model_version = '0001' )
+*            io_http_client             = lo_http_client
+*            iv_relative_service_root   = '' ).
+
+        lo_client_proxy = cl_web_odata_client_factory=>create_v2_remote_proxy(
+                  EXPORTING
+                     iv_service_definition_name = 'Z_SHOP_API_SCM_F04'
+                     io_http_client = lo_http_client
+                     iv_relative_service_root = '').
 
 
         " Set entity key
