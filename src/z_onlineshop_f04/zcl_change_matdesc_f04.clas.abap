@@ -13,9 +13,7 @@ CLASS zcl_change_matdesc_f04 DEFINITION
 ENDCLASS.
 
 
-
 CLASS zcl_change_matdesc_f04 IMPLEMENTATION.
-
 
   METHOD if_oo_adt_classrun~main.
     IF 1 = 2.
