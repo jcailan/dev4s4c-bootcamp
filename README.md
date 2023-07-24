@@ -21,5 +21,5 @@ S/4HANA legacy code (using a select from MARA table) to BTP ABAP readiness check
 ## BRANCHES
 
 - master - S/4HANA Cloud
-- [btp-abap](tree/btp-abap) - BTP ABAP Environment
-- [s4hop](tree/s4hop) - S/4HANA On-Premise 2022
+- [btp-abap](https://github.com/jcailan/dev4s4c-bootcamp/tree/btp-abap) - BTP ABAP Environment
+- [s4hop](https://github.com/jcailan/dev4s4c-bootcamp/tree/s4hop) - S/4HANA On-Premise 2022
